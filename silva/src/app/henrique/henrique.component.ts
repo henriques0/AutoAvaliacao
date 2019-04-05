@@ -8,7 +8,4 @@ import { Component } from '@angular/core';
 export class HenriqueComponent{
   nome : string = 'Henrique Silva'
 
-  mensagem() : void{
-    alert: "Você clicou";
-  }
 }

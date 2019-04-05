@@ -1,22 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {APP_BASE_HREF} from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HenriqueComponent } from './henrique/henrique.component'
+import { SobreComponent } from './sobre/sobre.component'
 
 @NgModule({
   declarations: [
-    AppComponent, HenriqueComponent
+    AppComponent, HenriqueComponent, SobreComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: './'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
